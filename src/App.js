@@ -17,11 +17,6 @@ const specialoffers = blogs.filter(blogs => [2, 4, 5].includes(blogs.id));
 
 function App() {
 
-  const [cartItems, setCartItems] = useState([]);
-  const onAdd = (data) => { setCartItems((prevItems) => [...prevItems, data]); };
-  const onRemove = (id) => { setCartItems((prevItems) => prevItems.filter(item => item.id !== id));};
-  const removeFromCart = (id) => { setCartItems((prevItems) => prevItems.filter(item => item.id !== id)); };
-
   return (
     <Router>
       <div>
@@ -48,8 +43,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home hotsale={hotsale} specialoffers={specialoffers} />} />
             <Route path="/products" element={<Productos data={data} />} />
-            <Route path="/details/:id" element={<Details onAdd={onAdd}/>} />
-            <Route path="/cart" element={<Cart cartItems={cartItems} onRemove={onRemove}/>} />
+            <Route path="/details/:id" element={<Details  />} />
+            <Route path="/cart" element={<Cart />} />
           </Routes>
 
           
@@ -134,10 +129,4 @@ const user = () => {
       return { name, email, phone };
     }
   });
-};
-  
-// Función para agregar un producto al carrito
-const addToCart = (product) => {
-  setCartItems((prevItems) => [...prevItems, product]);
-  Swal.fire('Agregado!', `${product.title} ha sido agregado al carrito.`, 'success');
 };

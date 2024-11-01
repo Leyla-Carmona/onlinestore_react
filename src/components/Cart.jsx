@@ -3,20 +3,13 @@ import Swal from 'sweetalert2';
 import { useState } from 'react';
 
 export const Cart = ({ cartItems, onRemove }) => {
-  const total = cartItems.reduce((sum, item) => sum + item.price, 0);
-
   return (
     <div>
       {cartItems.length === 0 ? (
         <p>El carrito está vacío.</p>
       ) : (
         <ul>
-          {cartItems.map(item => (
-            <li key={item.id}>
-              {item.title} - ${item.price.toFixed(2)}
-              <button onClick={() => onRemove(item.id)}>Eliminar</button>
-            </li>
-          ))}
+          IN PROGRESS 
         </ul>
       )}
       <p>Total: ${total.toFixed(2)}</p>
