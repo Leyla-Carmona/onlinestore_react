@@ -1,7 +1,6 @@
 import { React } from "react";
 import { CardBlog } from "./CardBlog";
 import { CardOffer } from "./CardOffer";
-import { Link } from 'react-router-dom';
 
 export const Home = ({ hotsale, specialoffers }) => {
 

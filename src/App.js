@@ -5,7 +5,7 @@ import { Home } from './components/Home';
 import { Productos } from './components/products';
 import { Details } from './components/Details';
 import { Cart } from './components/Cart';
-import { blogs } from './data/dataspn';
+import { blogs } from './data/dataeng';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
@@ -24,7 +24,7 @@ function App() {
               <li><Link to="/products">Our products</Link></li>
               <li><Link to="/Cart">Cart</Link></li>
               <li>
-                <img src={search} className='h-3 w-auto mr-3' />
+                <img src={search} className='h-3 w-auto mr-3' alt='Laptop'/>
                 <input type='search' placeholder='Explore'
                   className='w-3/5 transition ease-in-out delay-150 bg-black :-translate-y-1 hover:scale-110
                hover:bg-white duration-700...'>
@@ -34,7 +34,7 @@ function App() {
           </nav>
         </header>
         <div>
-          <img src={nav} >
+          <img src={nav} alt='Search'>
           </img>
           <div className=' bg-blue-900 h-6'>
           </div>
@@ -91,36 +91,6 @@ const terms = () => {
       title: 'swal-title',
       content: 'swal-content',
       confirmButton: 'swal-confirm-button',
-    }
-  });
-};
-
-const user = () => {
-  Swal.fire({
-    title: 'Please fill the information',
-    html: `
-            <form>
-                Nombre<br>
-                <input type="text" id="name" class="swal2-input" placeholder="Ana Hernandez"><br><br>
-                Correo electrónico:
-                <input type="email" id="email" class="swal2-input" placeholder="Ana81@example.com"><br><br>
-                Teléfono de contacto:
-                <input type="text" id="phone" class="swal2-input" placeholder="8888-8888"><br><br>
-            </form>
-        `,
-    confirmButtonText: 'Save',
-    showCancelButton: true,
-    preConfirm: () => {
-      const name = document.getElementById('name').value;
-      const email = document.getElementById('email').value;
-      const phone = document.getElementById('phone').value;
-
-      if (!name || !email || !phone) {
-        Swal.showValidationMessage('Please fill the information');
-        return false;
-      }
-
-      return { name, email, phone };
     }
   });
 };

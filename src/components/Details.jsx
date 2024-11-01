@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import { blogs } from '../data/dataspn'; 
+import { blogs } from '../data/dataeng'; 
 
 export const Details = ( onAdd ) => {
   const { id } = useParams(); 
