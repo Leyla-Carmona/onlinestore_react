@@ -13,10 +13,12 @@ h1{
 p,li{
     padding: 7px;
     margin-left: 40px;    
+    align-self: center;
 }
 
 body{
     background-color: white;
+    justify-content: center;
 }
 
 header{
@@ -65,6 +67,7 @@ td{
 .art{
     div{
     background-color: #5562AB;
+    height: 450px;
     align-items: center;
     border: black;
     border:solid;

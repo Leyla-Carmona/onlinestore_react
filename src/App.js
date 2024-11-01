@@ -10,7 +10,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
 const data = blogs;
-const hotsale = blogs.filter(blogs => [1, 7, 8].includes(blogs.id) );
+const hotsale = blogs.filter(blogs => [1,7,8,4,3].includes(blogs.id) );
 const specialoffers = blogs.filter(blogs => [2, 4, 5].includes(blogs.id));  
 
 function App() {
