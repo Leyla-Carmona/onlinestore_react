@@ -8,8 +8,6 @@ import { Cart } from './components/Cart';
 import { blogs } from './data/dataspn';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
-import { useState } from 'react';
-
 
 const data = blogs;
 const hotsale = blogs.filter(blogs => [1, 7, 8].includes(blogs.id) );
@@ -46,10 +44,6 @@ function App() {
             <Route path="/details/:id" element={<Details  />} />
             <Route path="/cart" element={<Cart />} />
           </Routes>
-
-          
-          <ProductList products={products} onAdd={addToCart} />
-          <Cart cartItems={cartItems} onRemove={removeFromCart} />
 
           <h1>FAQS</h1>
           <h1>Payment methods</h1>

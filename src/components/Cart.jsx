@@ -2,17 +2,9 @@ import React from 'react';
 import Swal from 'sweetalert2';
 import { useState } from 'react';
 
-export const Cart = ({ cartItems, onRemove }) => {
+export const Cart = ({}) => {
   return (
     <div>
-      {cartItems.length === 0 ? (
-        <p>El carrito está vacío.</p>
-      ) : (
-        <ul>
-          IN PROGRESS 
-        </ul>
-      )}
-      <p>Total: ${total.toFixed(2)}</p>
       <button onClick={user} className="m-9 w-[75%] bg-violet-800 hover:bg-violet-400 active:bg-slate-800 focus:outline-none focus:ring focus:ring-violet-300">Proceed to checkout</button>
     </div>
   );
