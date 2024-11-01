@@ -1,0 +1,108 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Inria Sans";
+  font-weight: bold;
+  margin-left: 20px;
+  color: rgb(204, 18, 29);
+}
+
+p, li {
+  padding: 7px;
+  margin-left: 40px;
+}
+
+body {
+  background-color: white;
+}
+
+header {
+  background-color: black;
+  font-size: 0.7rem;
+  font-family: "monserrat";
+  font-weight: bold;
+}
+header li {
+  color: white;
+  display: inline-flex;
+  padding: 8px;
+}
+header input {
+  border-radius: 200px;
+  height: 14px;
+  text-align: center;
+  float: inline-end;
+}
+
+.bd-home {
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+}
+
+.bg-blue-900 h1 {
+  color: skyblue;
+}
+
+footer {
+  font-family: "monserrat";
+  font-weight: 800;
+  color: rgb(168, 162, 162);
+}
+
+td {
+  padding: 25px;
+}
+
+.art div {
+  background-color: #5562AB;
+  align-items: center;
+  border: black;
+  border: solid;
+  border: 2px;
+}
+.art img {
+  border-width: 2px;
+  border: solid;
+  border-color: black;
+}
+
+button {
+  background-color: black;
+  color: white;
+  border-radius: 500px;
+  width: 75%;
+  margin-bottom: 25px;
+}
+
+.details h1 {
+  color: red;
+}
+
+/* Ajusta el tamaño de la alerta */
+.swal-popup {
+  width: 95%;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.swal-title {
+  font-size: 24px;
+}
+
+.swal-content {
+  font-size: 18px;
+  text-align: left;
+}
+
+.text {
+  text-align: left;
+}
+
+.swal-confirm-button {
+  width: auto;
+}/*# sourceMappingURL=app.css.map */
