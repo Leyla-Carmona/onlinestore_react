@@ -9,16 +9,20 @@ export const Home = ({ hotsale, specialoffers }) => {
 	}
 
 	return (		
-		<div className='home'>		
+		<div className='home'>	
+		<br />	
 		<h1>TOP SELLERS</h1>	
+		<hr />
 			<div className='overflow-hidden w-full'>
 				<div className='flex whitespace-nowrap animate-scroll'>
 					{hotsale.map((blog, index) => (
 						<CardBlog blog={blog} key={index} />
 					))}
 					</div>
+					<br />
 					<div className='bg-white'>
-						<h1>SPECIAL OFFERS</h1>
+						<h1>SPECIAL OFFERS</h1>						
+						<hr />
 						{specialoffers.map((blog, index) => (
 							<CardOffer blog={blog} key={index} />
 						))}

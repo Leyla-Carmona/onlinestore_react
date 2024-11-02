@@ -1,6 +1,6 @@
 import React from 'react';
 import './css/App.css';
-import Welcome from './images/Website_Welcome2.png';
+import Welcome from './images/Website_Welcome.png';
 import { Home } from './components/Home';
 import { Productos } from './components/products';
 import { Details } from './components/Details';
@@ -66,8 +66,11 @@ function App() {
     
     <div className='app'>
           <h1>FAQS</h1>
-          <h1>Payment methods</h1>
-          <p>We accept VISA, MasterCard, American Express, Paypal and Binance</p>
+          <hr />
+          <br />
+          <h1>Payment methods</h1>          
+          <p>We accept VISA, MasterCard, American Express, Paypal and Binance</p>          
+          <br />
           <h1>Return Policy</h1>
           <p>Return Period: Products may be returned within 30 days of purchase, provided they meet our return criteria.</p>
           <p>Proof of Purchase: Please provide the original invoice or receipt with your return, as it is required for processing.</p>

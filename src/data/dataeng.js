@@ -7,7 +7,7 @@ import raton_ergonomico from '../images/raton_ergonomico.jpg';
 import reloj_inteligente from '../images/reloj_inteligente.jpg';
 import smartphone from '../images/smartphone.jpg'; 
 import teclado_mecanico from '../images/teclado_mecanico.jpg'; 
-import webcam_hd from '../images/webcam_hd.jpg'; 
+import webcam_hd from '../images/webcam_hd.png'; 
 import solar_charger from '../images/cargador_solar.jpg';
 import fitness_tracker from '../images/reloj_fitness.webp';
 export const blogs = [

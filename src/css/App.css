@@ -84,6 +84,8 @@ header li:hover {
   height: 450px;
   align-items: center;
   border: var(--border-size) solid var(--border-color);
+  color: var(--secondary-color);
+  text-shadow: -1px -1px 0px black, 1px -1px 0px black, -1px 1px 0px black, 1px 1px 0px black;
 }
 
 .productscard figure {
@@ -115,7 +117,7 @@ header li:hover {
 .details li,
 .app p,
 .app li {
-  margin-right: 40px;
+  margin-left: 40px;
   padding: 7px;
   align-self: center;
 }

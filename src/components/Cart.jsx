@@ -6,7 +6,7 @@ export function Cart({ cart, removeFromCart }) {
   return (
     <div className='cart'>
       {cart.length === 0 ? (
-        <p>Your cart is empty</p>
+        <h1>Your cart is empty</h1>
       ) : (        
         cart.map((product) => (          
           <div>
