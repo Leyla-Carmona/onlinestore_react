@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 export const CardBlog = ({ blog }) => {
 	return (
 		<div className='cardBlog'>
-		<div className='h-full w-[200px] m-2 flex-shrink-0 cursor-pointer'>
-			<div className='rounded-3xl overflow-hidden mb-4 relative h-[250px]'>
+		<div className='top'>
+			<div className='round'>
 			<Link to={`/details/${blog.id}`}>
 				<img src={`${blog.imagen}`} alt={blog.title} /> 
 				</Link>

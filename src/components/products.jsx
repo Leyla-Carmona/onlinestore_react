@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 export const Productos = ({ data, addToCart }) => {
 
-  const productsPerPage = 3;
+  const productsPerPage = 4;
   const [currentPage, setCurrentPage] = useState(1);
 
   if (!data) {
@@ -22,9 +22,11 @@ export const Productos = ({ data, addToCart }) => {
         {currentProducts.map((blog, index) => (
           <Producto blog={blog} key={index} addToCart={addToCart} />
         ))}
+        <br />
+        <br />
         <div classname="paginate">
         <nav className='navproducts'>
-          <ul class="inline-flex -space-x-px justify-center text-center">
+          <ul>
             <li
               key={currentPage - 1}
               onClick={() => {
@@ -65,29 +67,22 @@ export const Productos = ({ data, addToCart }) => {
 const Producto = ({ blog, addToCart }) => (
   <div className="productscard">
     <div className="flex flex-col items-center m-5 w-[280px] rounded-3xl">
-      <div className='productinf'>
       <Link to={`/details/${blog.id}`}>
       <figure>
         <img src={blog.imagen} alt={blog.title} className="border-black border-solid border-2 m-4 mt-5 w-[220px] rounded-2xl bg-white" />
       </figure>
       </Link>
       <table>
-        <tbody>
           <tr>
             <td>{blog.title}</td>
             <td>${blog.price}</td>
           </tr>
-        </tbody>
       </table>
       <button onClick={() => addToCart(blog)} className="bg-black text-white py-1 px-4 mt-3 rounded hover:bg-slate-500">
         Add to Cart
       </button>
-    </div>
   </div>
   </div>
 );
 
 export default Producto;
-<script>
-  document.getElementById('section').innerHTML = 'Our Products';
-</script>

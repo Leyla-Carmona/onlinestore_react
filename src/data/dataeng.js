@@ -8,7 +8,8 @@ import reloj_inteligente from '../images/reloj_inteligente.jpg';
 import smartphone from '../images/smartphone.jpg'; 
 import teclado_mecanico from '../images/teclado_mecanico.jpg'; 
 import webcam_hd from '../images/webcam_hd.jpg'; 
-
+import solar_charger from '../images/cargador_solar.jpg';
+import fitness_tracker from '../images/reloj_fitness.webp';
 export const blogs = [
 	{
 		id: 1,
@@ -210,5 +211,45 @@ export const blogs = [
 		],
 		imagen: webcam_hd,
 		price: '49.99'
-	}
+	},
+	{
+		id: 11,
+		title: 'Portable Solar Charger',
+		description: 'Eco-friendly solar charger for mobile devices.',
+		characteristics: [
+			'High-efficiency solar panels for quick charging.',
+			'Dual USB output for charging multiple devices simultaneously.',
+			'Compact and lightweight design for easy portability.',
+			'Built-in LED flashlight for outdoor use.',
+			'Durable and weather-resistant for outdoor adventures.'
+		],
+		advantages: [
+			'Great for camping, hiking, or traveling off the grid.',
+			'Reduces reliance on traditional power sources.',
+			'Convenient for emergency situations when power is unavailable.',
+			'Environmentally friendly solution for charging devices.'
+		],
+		imagen: solar_charger,
+		price: '39.99'
+	},
+	{
+		id: 12,
+		title: 'Smart Fitness Tracker',
+		description: 'Wearable device to monitor fitness activities and health metrics.',
+		characteristics: [
+			'Tracks steps, calories burned, and distance traveled.',
+			'Heart rate monitoring for real-time health insights.',
+			'Sleep tracking to improve overall sleep quality.',
+			'Water-resistant design for use during workouts or swimming.',
+			'Syncs with smartphones for notifications and data analysis.'
+		],
+		advantages: [
+			'Helps you stay motivated to reach your fitness goals.',
+			'Provides valuable health data to inform lifestyle choices.',
+			'Lightweight and comfortable for all-day wear.',
+			'Customizable watch faces to match your style.'
+		],
+		imagen: fitness_tracker,
+		price: '79.99'
+	}	
 ]

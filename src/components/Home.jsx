@@ -9,8 +9,7 @@ export const Home = ({ hotsale, specialoffers }) => {
 	}
 
 	return (		
-		<div className='home'>
-		<div className='container my-5 bg-white'>			
+		<div className='home'>		
 		<h1>TOP SELLERS</h1>	
 			<div className='overflow-hidden w-full'>
 				<div className='flex whitespace-nowrap animate-scroll'>
@@ -24,8 +23,6 @@ export const Home = ({ hotsale, specialoffers }) => {
 							<CardOffer blog={blog} key={index} />
 						))}
 					</div>
-				
-			</div>
 		</div></div>
 	);
 };

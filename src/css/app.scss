@@ -1,161 +1,215 @@
+/* Reset y Variables */
 * {
     margin: 0;
     padding: 0;
 }
 
-h1 {
-    font-family: 'Inria Sans';
-    font-weight: bold;
-    margin-left: 20px;
-    color: rgb(204, 18, 29);
+:root {
+    --main-color: rgb(204, 18, 29);
+    --secondary-color: white;
+    --background-color: #5562AB;
+    --font-family-primary: 'Inria Sans';
+    --font-family-secondary: 'Montserrat';
+    --border-color: black;
+    --border-size: 2px;
+    --button-radius: 500px;
+    --padding-standard: 1.18rem;
+    --presentation-height: 245px;
+    --grid2-width: 420px;
+    --grid4-width: 260px;
 }
 
+/* Estilos Generales */
 body {
     background-color: white;
     justify-content: center;
     font-weight: bold;
 }
 
+h1 {
+    font-family: var(--font-family-primary);
+    font-weight: bold;
+    margin-left: 20px;
+    color: var(--main-color);
+}
+
+
+/* Header */
 header {
-    color: white;
+    color: var(--secondary-color);
     font-size: 1rem;
-    font-family: 'monserrat';
+    font-family: var(--font-family-secondary);
     position: fixed;
     width: 100%;
     height: 10%;
     z-index: 3;
-    background-color: rgba(0, 0, 0, 0.681);
-    nav{        
-        align-items: center;
-        justify-self: center;
-    }
-    li {
-        color: white;
-        display: inline-flex;
-        padding: 1.18rem;
-        cursor: pointer;
-    }
-
-    li:hover {
-        transition: color 1s ease ;
-        text-underline-offset: dashed;
-        color: rgb(204, 18, 29);
-    }
+    background-color: rgba(0, 0, 0, 0.892);
 }
 
-.navproducts{        
-        align-items: center;
-        justify-self: center;
-        padding: 20px;        
-    li {
-        display: inline-flex;
-        padding: 1.18rem;
-        cursor: pointer;
-    }
-}
-    
-.productscard{ 
-        margin: 20px;
-        background-color: #5562AB;
-        height: 450px;
-        align-items: center;
-        border: black;
-        border: solid;
-        border: 2px;
-        figure{
-            height: 240px;        
-            width: 240px;
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                border-width: 2px;
-                 border: solid;
-                border-color: black;        
-            }
-        }
-    td {
-        padding: 25px;
-    }
+header nav {
+    align-items: center;
+    justify-self: center;
 }
 
-.details {
-    td {
-        padding: 25px;
-    }
-    h1 {
-        color: red;
-    }
-    p, li {
-        margin-right: 40px;    
-    }
-}
-.app, .details{
-    p,li {
-        padding: 7px;
-        margin-left: 40px;
-        align-self: center; 
-    }
+header li {
+    color: var(--secondary-color);
+    display: inline-flex;
+    padding: var(--padding-standard);
+    cursor: pointer;
 }
 
-//Cart
-.cart {
-    img {
-        margin: 10px;
-        width: 150px;
-        height: 150px;
-        border-color: black;
-        border: solid;
-        border-width: 2px;
-        border-radius: 30px;
-        float:left;
-    }
-    table{
-        margin: 25px;
-    }
-    .total{
-        margin-left: 55%;
-    }
-    tr{
-        text-align: left;
-    }
-    td{
-        padding-right: 13px;
-    }
-    h1, p{ 
-        margin: 0}
-    h1{
-        font-size: 16px;
-    }
-    p{
-        padding: 0;
-        font-size: 13px;
-    }
-
-    #check{
-        height: 70px;
-        background-color: #6A14BF;
-        font-size: 22px;
-        font-weight: bold;
-        text-shadow:  -1px -1px 0px black,  
-        1px -1px 0px black,
-        -1px 1px 0px black,
-        1px 1px 0px black;;
-    }
-
-    #check:hover{
-        background-color: #b392d3;
-    }
+header li:hover {
+    color: var(--main-color);
+    transition: color 1s ease;
+    text-underline-offset: dashed;
 }
 
-//footer
-footer{
-    font-family: 'monserrat';
+/* Navegación de Productos */
+.navproducts {
+    align-items: center;
+    justify-self: center;
+    padding: 20px;
+}
+
+.navproducts li {
+    display: inline-flex;
+    padding: var(--padding-standard);
+    cursor: pointer;
+}
+
+/* Tarjetas de Productos */
+.productscard {
+    margin: 20px;
+    background-color: var(--background-color);
+    height: 450px;
+    align-items: center;
+    border: var(--border-size) solid var(--border-color);
+}
+
+.productscard figure {
+    height: 240px;
+    width: 240px;
+}
+
+.productscard img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.productscard td {
+    padding: 25px;
+}
+
+/* Detalles */
+.details td {
+    padding: 25px;
+}
+
+.details h1 {
+    color: red;
+}
+
+.details p,
+.details li,
+.app p,
+.app li {
+    margin-right: 40px;
+    padding: 7px;
+    align-self: center;
+}
+
+/* Estilo para Presentación */
+#presentation {
+    width: 100%;
+    height: var(--presentation-height);
+}
+
+#laptop {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cardBlog .top {
+    height: 100%;
+    width: 200px;
+    margin: 0.5rem;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.cardBlog .round {
+    height: 200px;
+}
+
+.round {
+    border-radius: 1.5rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+/* Carrito de Compras */
+.cart img {
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+    border: var(--border-size) solid var(--border-color);
+    border-radius: 30px;
+    float: left;
+}
+
+.cart table {
+    margin: 25px;
+}
+
+.cart .total {
+    margin-left: 55%;
+}
+
+.cart tr {
+    text-align: left;
+}
+
+.cart td {
+    padding-right: 13px;
+}
+
+.cart h1,
+.cart p {
+    margin: 0;
+}
+
+.cart h1 {
+    font-size: 16px;
+}
+
+.cart p {
+    padding: 0;
+    font-size: 13px;
+}
+
+#check {
+    height: 70px;
+    background-color: #6A14BF;
+    font-size: 22px;
+    font-weight: bold;
+    text-shadow: -1px -1px 0px black, 1px -1px 0px black, -1px 1px 0px black, 1px 1px 0px black;
+}
+
+#check:hover {
+    background-color: #b392d3;
+}
+
+/* Footer */
+footer {
+    font-family: var(--font-family-secondary);
     font-weight: 800;
     color: rgb(168, 162, 162);
 }
 
-//Swal
+/* SweetAlert */
 .swal-popup {
     width: 95%;
     padding: 20px;
@@ -175,16 +229,99 @@ footer{
     width: auto;
 }
 
-//Buttons
+/* Botones */
 button {
     margin: 2.25rem;
     background-color: black;
-    color: white;
-    border-radius: 500px;
+    color: var(--secondary-color);
+    border-radius: var(--button-radius);
     width: 75%;
-    margin-bottom: 25px; 
+    margin-bottom: 25px;
 }
 
-button:hover{
+button:hover {
     background-color: rgb(100, 94, 94);
+}
+
+.object img{
+    border: var(--border-size) solid rgba(0, 0, 0, 0.362);
+}
+.object .grid2,
+.object .grid4,
+.object .grid5 {
+    margin: 20px;
+    float: left;
+}
+
+.object .grid2 figure,
+.object .grid4 figure,
+.object .grid5 figure {
+    width: 100%;
+    height: 100%;
+}
+
+.object .grid2 img,
+.object .grid4 img,
+.object .grid5 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Estilos específicos para cada tamaño de pantalla */
+
+/* Pantallas pequeñas (Móviles) */
+@media (min-width: 320px) {
+    /* Ya están definidos los estilos base */
+}
+
+/* Pantallas medianas (Tablets / Laptops pequeñas) */
+@media (min-width: 768px) {
+    :root {
+        --grid2-width: 420px;
+        --grid4-width: 260px;
+        --presentation-height: 450px;
+    }
+
+    .cardBlog .top {
+        width: 375px;
+        margin: 2rem;
+    }
+
+    .cardBlog .round {
+        height: 400px;
+    }
+
+    .object .grid2 {
+        width: var(--grid2-width);
+    }
+
+    .object .grid4,
+    .object .grid5 {
+        width: var(--grid4-width);
+    }
+}
+
+/* Pantallas grandes (Laptops de 1024px o más) */
+@media (min-width: 1024px) {
+    :root {
+        --grid2-width: 600px;
+        --grid4-width: 320px;
+    }
+}
+
+/* Pantallas extra grandes (Laptops L) */
+@media (min-width: 1440px) {
+    :root {
+        --grid2-width: 750px;
+        --grid4-width: 500px;
+    }
+}
+
+/* Pantallas ultra grandes (4K o más) */
+@media (min-width: 2560px) {
+    :root {
+        --grid2-width: 1200px;
+        --grid4-width: 750px;
+    }
 }

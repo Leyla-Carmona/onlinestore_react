@@ -1,6 +1,6 @@
 import React from 'react';
 import './css/App.css';
-import Welcome from './images/Website_Welcome.png';
+import Welcome from './images/Website_Welcome2.png';
 import { Home } from './components/Home';
 import { Productos } from './components/products';
 import { Details } from './components/Details';
@@ -48,8 +48,10 @@ function App() {
           </nav>
         </header>
         <div>
+        <figure id='presentation'>
           <img id='laptop' src={Welcome} alt='logo'>
           </img>
+        </figure>
           <div className=' bg-blue-900 h-6'>
           <h1 id='section'> </h1>
           </div>
