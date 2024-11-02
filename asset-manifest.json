@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/onlinestore_react/static/css/main.4d1b32a4.css",
-    "main.js": "/onlinestore_react/static/js/main.6676b790.js",
+    "main.css": "/onlinestore_react/static/css/main.e9d1474c.css",
+    "main.js": "/onlinestore_react/static/js/main.b5740684.js",
     "static/js/453.aa77d7ed.chunk.js": "/onlinestore_react/static/js/453.aa77d7ed.chunk.js",
     "static/media/smartphone.jpg": "/onlinestore_react/static/media/smartphone.f9cbbd635b8e2ff81ac0.jpg",
     "static/media/Website_Welcome.png": "/onlinestore_react/static/media/Website_Welcome.b24b9608e4bc4d60d963.png",
@@ -15,12 +15,12 @@
     "static/media/raton_ergonomico.jpg": "/onlinestore_react/static/media/raton_ergonomico.f44795081210ee300d92.jpg",
     "static/media/auriculares_inalambricos.jpg": "/onlinestore_react/static/media/auriculares_inalambricos.ae605ec868e86b9f4122.jpg",
     "index.html": "/onlinestore_react/index.html",
-    "main.4d1b32a4.css.map": "/onlinestore_react/static/css/main.4d1b32a4.css.map",
-    "main.6676b790.js.map": "/onlinestore_react/static/js/main.6676b790.js.map",
+    "main.e9d1474c.css.map": "/onlinestore_react/static/css/main.e9d1474c.css.map",
+    "main.b5740684.js.map": "/onlinestore_react/static/js/main.b5740684.js.map",
     "453.aa77d7ed.chunk.js.map": "/onlinestore_react/static/js/453.aa77d7ed.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4d1b32a4.css",
-    "static/js/main.6676b790.js"
+    "static/css/main.e9d1474c.css",
+    "static/js/main.b5740684.js"
   ]
 }
