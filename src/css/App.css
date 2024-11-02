@@ -28,6 +28,10 @@ header {
   font-size: 0.7rem;
   font-family: "monserrat";
   font-weight: bold;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  opacity: 75%;
 }
 header li {
   color: white;
