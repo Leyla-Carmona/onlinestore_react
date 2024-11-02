@@ -41,7 +41,7 @@ function App() {
         <header>
           <nav className='justify-center items-center'>
             <ul>             
-              <li><Link to="/">Home</Link></li>
+              <li><Link to="/home">Home</Link></li>
               <li><Link to="/products">Our products</Link></li>
               <li><Link to="/cart">Cart ({cart.length})</Link></li>
             </ul>
@@ -55,7 +55,7 @@ function App() {
           </div>
           <Home hotsale={hotsale} specialoffers={specialoffers} />
           <Routes>
-            <Route path="/" element={<Home hotsale={hotsale} specialoffers={specialoffers} />} />
+            <Route path="/home" element={<Home hotsale={hotsale} specialoffers={specialoffers} />} />
             <Route path="/products" element={<Productos data={data} addToCart={addToCart} />} />
             <Route path="/details/:id" element={<Details />} />
             <Route path="/cart" element={<Cart cart={cart} removeFromCart={removeFromCart} />} />
