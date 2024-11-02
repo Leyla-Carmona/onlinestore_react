@@ -36,7 +36,7 @@ function App() {
   };
 
   return (
-    <Router basename="/home">
+    <Router basename="/onlinestore_react/">
       <div>
         <header>
           <nav className='justify-center items-center'>
