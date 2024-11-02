@@ -7,7 +7,6 @@ import { Details } from './components/Details';
 import { Cart } from './components/Cart';
 import { blogs } from './data/dataeng';
 import { BrowserRouter as Router, Route, Routes, Link, Navigate } from 'react-router-dom';
-
 import Swal from 'sweetalert2';
 import { useState } from 'react';
 
@@ -40,11 +39,11 @@ function App() {
     <Router basename="/onlinestore_react/">
       <div>
         <header>
-          <nav className='justify-center items-center'>
+          <nav>
             <ul>                           
               <li><Link to="/home">Home</Link></li>
               <li><Link to="/products">Our products</Link></li>
-              <li><Link to="/cart">Cart ({cart.length})</Link></li>
+              <li><Link to="/cart">Cart</Link></li>
             </ul>
           </nav>
         </header>
