@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
 
-export const Productos = ({ data }) => {
+export const Productos = ({ data , addToCart  }) => {
 
   const productsPerPage = 3;
   const [currentPage, setCurrentPage] = useState(1);
@@ -20,12 +20,13 @@ export const Productos = ({ data }) => {
   return (
     <div className="flex flex-wrap justify-center">
       {currentProducts.map((blog, index) => (
-        <Producto blog={blog} key={index} />
+        <Producto blog={blog} key={index} addToCart={addToCart} />
       ))}
       <div>
       </div>
       <nav>
-        <ul class="inline-flex -space-x-px justify-center text-center">
+        <ul class="inline-flex -space-x-px justify-center text-
+        center">
           <li 
               key={currentPage - 1}
               onClick={() => { 
@@ -61,17 +62,28 @@ export const Productos = ({ data }) => {
 };
 
 
-const Producto = ({ blog }) => (
-  <div className='art'>
+const Producto = ({ blog, addToCart }) => (
+  <div className="art">
     <div className="flex flex-col items-center m-5 w-[280px] rounded-3xl">
       <Link to={`/details/${blog.id}`}>
-        <img src={`${blog.imagen}`} alt={blog.title} className='border-black border-solid border-2 m-4 mt-5 w-[220px] rounded-2xl border-opacity-15 bg-white' />
+        <img src={blog.imagen} alt={blog.title} className="border-black border-solid border-2 m-4 mt-5 w-[220px] rounded-2xl bg-white" />
       </Link>
       <table>
-        <td>{blog.title}</td>
-        $ <td>{blog.price}</td>
+        <tbody>
+          <tr>
+            <td>{blog.title}</td>
+            <td>${blog.price}</td>
+          </tr>
+        </tbody>
       </table>
-      <button class="bg-black hover:bg-slate-500 active:bg-slate-800 focus:outline-none focus:ring focus:ring-violet-300 ..">Add to cart </button>
+      <button onClick={() => addToCart(blog)} className="bg-black text-white py-1 px-4 mt-3 rounded hover:bg-slate-500">
+        Add to Cart
+      </button>
     </div>
   </div>
 );
+
+export default Producto;
+<script>
+document.getElementById('section').innerHTML = 'Our Products';
+</script>

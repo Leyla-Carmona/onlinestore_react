@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { blogs } from '../data/dataeng'; 
 
-export const Details = ( onAdd ) => {
+export const Details = () => {
   const { id } = useParams(); 
   const blog = blogs.find(blog => blog.id === parseInt(id)); 
   if (!blog) {
@@ -28,7 +28,7 @@ export const Details = ( onAdd ) => {
       {blog.advantages.map((char, index) => (
         <li key={index}>{char}</li>
       ))}
-       <button onClick={() => onAdd(blog)} className="m-9 w-[75%] bg-violet-800 hover:bg-violet-400 active:bg-slate-800 focus:outline-none focus:ring focus:ring-violet-300">
+       <button className="m-9 w-[75%] bg-violet-800 hover:bg-violet-400 active:bg-slate-800 focus:outline-none focus:ring focus:ring-violet-300">
         Add to cart
       </button>
     </div>

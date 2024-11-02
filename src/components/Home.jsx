@@ -28,4 +28,6 @@ export const Home = ({ hotsale, specialoffers }) => {
 		</div>
 	);
 };
-
+<script>
+document.getElementById('section').innerHTML = 'Home';
+</script>
