@@ -1,26 +1,28 @@
 {
   "files": {
-    "main.css": "/onlinestore_react/static/css/main.e9d1474c.css",
-    "main.js": "/onlinestore_react/static/js/main.b5740684.js",
+    "main.css": "/onlinestore_react/static/css/main.0893d9d7.css",
+    "main.js": "/onlinestore_react/static/js/main.8a7ef101.js",
     "static/js/453.aa77d7ed.chunk.js": "/onlinestore_react/static/js/453.aa77d7ed.chunk.js",
     "static/media/smartphone.jpg": "/onlinestore_react/static/media/smartphone.f9cbbd635b8e2ff81ac0.jpg",
-    "static/media/Website_Welcome.png": "/onlinestore_react/static/media/Website_Welcome.b24b9608e4bc4d60d963.png",
+    "static/media/Website_Welcome2.png": "/onlinestore_react/static/media/Website_Welcome2.b24b9608e4bc4d60d963.png",
     "static/media/monitor_ultrahd.jpg": "/onlinestore_react/static/media/monitor_ultrahd.29185ac2ee8fdacfe7a3.jpg",
     "static/media/webcam_hd.jpg": "/onlinestore_react/static/media/webcam_hd.1faf328be7592879e500.jpg",
+    "static/media/cargador_solar.jpg": "/onlinestore_react/static/media/cargador_solar.c2f645ed70646b8e7d1e.jpg",
     "static/media/teclado_mecanico.jpg": "/onlinestore_react/static/media/teclado_mecanico.87be3f3bbba3387c6cc5.jpg",
     "static/media/consola_videojuegos.jpg": "/onlinestore_react/static/media/consola_videojuegos.13dfa2d0088c17dab76f.jpg",
     "static/media/reloj_inteligente.jpg": "/onlinestore_react/static/media/reloj_inteligente.ad86b01302f719f2d6a2.jpg",
+    "static/media/reloj_fitness.webp": "/onlinestore_react/static/media/reloj_fitness.9a6749d0faf67cd8b73e.webp",
     "static/media/laptop_gaming.jpg": "/onlinestore_react/static/media/laptop_gaming.d82d2295f9712a72fcf8.jpg",
     "static/media/disco_duro_externo.jpg": "/onlinestore_react/static/media/disco_duro_externo.819ac938424b876ca812.jpg",
     "static/media/raton_ergonomico.jpg": "/onlinestore_react/static/media/raton_ergonomico.f44795081210ee300d92.jpg",
     "static/media/auriculares_inalambricos.jpg": "/onlinestore_react/static/media/auriculares_inalambricos.ae605ec868e86b9f4122.jpg",
     "index.html": "/onlinestore_react/index.html",
-    "main.e9d1474c.css.map": "/onlinestore_react/static/css/main.e9d1474c.css.map",
-    "main.b5740684.js.map": "/onlinestore_react/static/js/main.b5740684.js.map",
+    "main.0893d9d7.css.map": "/onlinestore_react/static/css/main.0893d9d7.css.map",
+    "main.8a7ef101.js.map": "/onlinestore_react/static/js/main.8a7ef101.js.map",
     "453.aa77d7ed.chunk.js.map": "/onlinestore_react/static/js/453.aa77d7ed.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e9d1474c.css",
-    "static/js/main.b5740684.js"
+    "static/css/main.0893d9d7.css",
+    "static/js/main.8a7ef101.js"
   ]
 }
