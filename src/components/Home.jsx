@@ -11,14 +11,16 @@ export const Home = ({ hotsale, specialoffers }) => {
 	return (		
 		<div className='home'>	
 		<br />	
+		
 		<h1>TOP SELLERS</h1>	
-		<hr />
+		<hr /> 
 			<div className='overflow-hidden w-full'>
 				<div className='flex whitespace-nowrap animate-scroll'>
 					{hotsale.map((blog, index) => (
 						<CardBlog blog={blog} key={index} />
 					))}
 					</div>
+					<br />
 					<br />
 					<div className='bg-white'>
 						<h1>SPECIAL OFFERS</h1>						
