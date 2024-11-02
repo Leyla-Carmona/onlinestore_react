@@ -36,7 +36,7 @@ function App() {
   };
 
   return (
-    <Router basename="/">
+    <Router basename="/home">
       <div>
         <header>
           <nav className='justify-center items-center'>
