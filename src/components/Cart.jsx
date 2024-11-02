@@ -72,6 +72,12 @@ const user = () => {
         Swal.fire({
           icon: 'success',
           title: '¡Thank you! You will receive an email with the next steps',
+          customClass: {
+            popup: 'swal-popup',
+            title: 'swal-title',
+            content: 'swal-content',
+            confirmButton: 'swal-confirm-button',
+          }
         })
       }
     }

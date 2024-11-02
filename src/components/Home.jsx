@@ -8,7 +8,8 @@ export const Home = ({ hotsale, specialoffers }) => {
 		return <div>Fatal error, please try again</div>;
 	}
 
-	return (
+	return (		
+		<div className='home'>
 		<div className='container my-5 bg-white'>			
 		<h1>TOP SELLERS</h1>	
 			<div className='overflow-hidden w-full'>
@@ -25,7 +26,7 @@ export const Home = ({ hotsale, specialoffers }) => {
 					</div>
 				
 			</div>
-		</div>
+		</div></div>
 	);
 };
 <script>

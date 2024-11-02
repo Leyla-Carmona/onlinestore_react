@@ -17,14 +17,14 @@ body {
 }
 
 header {
-  background-color: black;
+  color: white;
   font-size: 1rem;
   font-family: "monserrat";
   position: fixed;
   width: 100%;
   height: 10%;
   z-index: 3;
-  opacity: 75%;
+  background-color: rgba(0, 0, 0, 0.681);
 }
 header nav {
   align-items: center;
@@ -34,15 +34,27 @@ header li {
   color: white;
   display: inline-flex;
   padding: 1.18rem;
+  cursor: pointer;
+}
+header li:hover {
+  transition: color 1s ease;
+  text-underline-offset: dashed;
+  color: rgb(204, 18, 29);
 }
 
-footer {
-  font-family: "monserrat";
-  font-weight: 800;
-  color: rgb(168, 162, 162);
+.navproducts {
+  align-items: center;
+  justify-self: center;
+  padding: 20px;
+}
+.navproducts li {
+  display: inline-flex;
+  padding: 1.18rem;
+  cursor: pointer;
 }
 
-.products div {
+.productscard {
+  margin: 20px;
   background-color: #5562AB;
   height: 450px;
   align-items: center;
@@ -50,19 +62,21 @@ footer {
   border: solid;
   border: 2px;
 }
-.products img {
+.productscard figure {
+  height: 240px;
+  width: 240px;
+}
+.productscard figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-width: 2px;
   border: solid;
   border-color: black;
 }
-.products td {
+.productscard td {
   padding: 25px;
-}
-.products p,
-.products li {
-  padding: 7px;
-  margin-left: 40px;
-  align-self: center;
 }
 
 .details td {
@@ -71,41 +85,14 @@ footer {
 .details h1 {
   color: red;
 }
-
-button {
-  margin: 2.25rem;
-  background-color: black;
-  color: white;
-  border-radius: 500px;
-  width: 75%;
-  margin-bottom: 25px;
+.details p, .details li {
+  margin-right: 40px;
 }
 
-button:hover {
-  background-color: rgb(100, 94, 94);
-}
-
-.swal-popup {
-  width: 95%;
-  padding: 20px;
-  border-radius: 20px;
-}
-
-.swal-title {
-  font-size: 24px;
-}
-
-.swal-content {
-  font-size: 18px;
-  text-align: left;
-}
-
-.text {
-  text-align: left;
-}
-
-.swal-confirm-button {
-  width: auto;
+.app p, .app li, .details p, .details li {
+  padding: 7px;
+  margin-left: 40px;
+  align-self: center;
 }
 
 .cart img {
@@ -130,12 +117,13 @@ button:hover {
 .cart td {
   padding-right: 13px;
 }
-.cart h1 {
+.cart h1, .cart p {
   margin: 0;
+}
+.cart h1 {
   font-size: 16px;
 }
 .cart p {
-  margin: 0;
   padding: 0;
   font-size: 13px;
 }
@@ -150,6 +138,40 @@ button:hover {
   background-color: #b392d3;
 }
 
-.cardBlog {
-  margin: 0.5rem;
+footer {
+  font-family: "monserrat";
+  font-weight: 800;
+  color: rgb(168, 162, 162);
+}
+
+.swal-popup {
+  width: 95%;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.swal-title {
+  font-size: 24px;
+}
+
+.swal-content {
+  font-size: 18px;
+  text-align: left;
+}
+
+.swal-confirm-button {
+  width: auto;
+}
+
+button {
+  margin: 2.25rem;
+  background-color: black;
+  color: white;
+  border-radius: 500px;
+  width: 75%;
+  margin-bottom: 25px;
+}
+
+button:hover {
+  background-color: rgb(100, 94, 94);
 }/*# sourceMappingURL=app.css.map */

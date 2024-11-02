@@ -5,13 +5,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'auriculares': "url('../images/auriculares_inalambricos.jpg')",
-        'smartphone': "url('../images/smarthpone')",
-        'nintendo': "url('../images/consola_videojuegos.jpg')",
-        'discoduro': "url('../images/disco_duro_externo.jpg')",
-        'home': "url('../images/Website_Welcome.png')"
-      },
       backgroundColor: theme => ({
         ...theme('colors'),
         'primary': '#CC2D4A',

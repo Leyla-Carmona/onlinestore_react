@@ -1,6 +1,6 @@
 import React from 'react';
 import './css/App.css';
-import nav from './images/Website_Welcome.png';
+import Welcome from './images/Website_Welcome.png';
 import { Home } from './components/Home';
 import { Productos } from './components/products';
 import { Details } from './components/Details';
@@ -48,7 +48,7 @@ function App() {
           </nav>
         </header>
         <div>
-          <img src={nav} alt='Search'>
+          <img id='laptop' src={Welcome} alt='logo'>
           </img>
           <div className=' bg-blue-900 h-6'>
           <h1 id='section'> </h1>
@@ -60,15 +60,19 @@ function App() {
             <Route path="/details/:id" element={<Details />} />
             <Route path="/cart" element={<Cart cart={cart} removeFromCart={removeFromCart} />} />
           </Routes>
+          
+    
+    <div className='app'>
           <h1>FAQS</h1>
           <h1>Payment methods</h1>
-          <p>We accept VISA, MasterCard, American Express, Paypal and Binance, We accept VISA, MasterCard, American Express, Paypal and Binance.</p>
+          <p>We accept VISA, MasterCard, American Express, Paypal and Binance</p>
           <h1>Return Policy</h1>
           <p>Return Period: Products may be returned within 30 days of purchase, provided they meet our return criteria.</p>
           <p>Proof of Purchase: Please provide the original invoice or receipt with your return, as it is required for processing.</p>
           <p>Inspection Process: All returned items will undergo an inspection to ensure they are in their original condition, including packaging, tags, and any included accessories. Products that show signs of wear, damage, or alteration may not qualify for a full refund or exchange.</p>
           <p>Refund Method: If approved, your refund will be processed to your original method of payment. Please allow a few business days for this transaction.</p>
           <p>For any questions, please contact our customer service team. We’re here to help!</p>
+          </div>
         </div>
       </div>
       <footer className='bg-gray-200'>
