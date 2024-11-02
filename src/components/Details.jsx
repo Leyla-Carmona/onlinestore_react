@@ -12,13 +12,13 @@ export const Details = () => {
     <div className='details'>
       <img src={`${blog.imagen}`} alt={blog.title} className='w-[300px] rounded-2xl border-opacity-15 bg-white' />
       <table>
-        <tbody>
           <tr>
             <td><h1>{blog.title}</h1></td>
             <td>${blog.price}</td>
           </tr>
-        </tbody>
       </table>
+      
+      <hr />
       <p>{blog.description}</p>
       <p>Characteristics:</p>
       {blog.characteristics.map((char, index) => (

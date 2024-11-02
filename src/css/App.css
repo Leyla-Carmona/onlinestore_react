@@ -29,16 +29,20 @@ body {
 
 h1 {
   font-family: var(--font-family-primary);
+  font-size: large;
   font-weight: bold;
   margin-left: 20px;
   color: var(--main-color);
+}
+
+p {
+  font-family: var(--font-family-secondary);
 }
 
 /* Header */
 header {
   color: var(--secondary-color);
   font-size: 1rem;
-  font-family: var(--font-family-secondary);
   position: fixed;
   width: 100%;
   height: 10%;
@@ -109,10 +113,6 @@ header li:hover {
   padding: 25px;
 }
 
-.details h1 {
-  color: red;
-}
-
 .details p,
 .details li,
 .app p,
@@ -133,6 +133,11 @@ header li:hover {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  pointer-events: none;
+}
+
+.details img {
+  pointer-events: none;
 }
 
 .cardBlog .top {
@@ -152,6 +157,10 @@ header li:hover {
   overflow: hidden;
   margin-bottom: 1rem;
   position: relative;
+}
+
+img:hover {
+  transform: scale(1.05);
 }
 
 /* Carrito de Compras */
@@ -233,7 +242,6 @@ footer {
   width: auto;
 }
 
-/* Botones */
 button {
   margin: 2.25rem;
   background-color: black;
@@ -274,12 +282,6 @@ button:hover {
      object-fit: cover;
 }
 
-/* Estilos específicos para cada tamaño de pantalla */
-/* Pantallas pequeñas (Móviles) */
-@media (min-width: 320px) {
-  /* Ya están definidos los estilos base */
-}
-/* Pantallas medianas (Tablets / Laptops pequeñas) */
 @media (min-width: 768px) {
   :root {
     --grid2-width: 420px;
@@ -300,22 +302,23 @@ button:hover {
   .object .grid5 {
     width: var(--grid4-width);
   }
+  .details img {
+    float: right;
+    width: var(--grid2-width);
+  }
 }
-/* Pantallas grandes (Laptops de 1024px o más) */
 @media (min-width: 1024px) {
   :root {
     --grid2-width: 600px;
     --grid4-width: 320px;
   }
 }
-/* Pantallas extra grandes (Laptops L) */
 @media (min-width: 1440px) {
   :root {
     --grid2-width: 750px;
     --grid4-width: 500px;
   }
 }
-/* Pantallas ultra grandes (4K o más) */
 @media (min-width: 2560px) {
   :root {
     --grid2-width: 1200px;
