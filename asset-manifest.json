@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/onlinestore_react/static/css/main.b1c38e8e.css",
-    "main.js": "/onlinestore_react/static/js/main.064b6ad4.js",
+    "main.js": "/onlinestore_react/static/js/main.b47bc542.js",
     "static/js/453.aa77d7ed.chunk.js": "/onlinestore_react/static/js/453.aa77d7ed.chunk.js",
     "static/media/smartphone.jpg": "/onlinestore_react/static/media/smartphone.f9cbbd635b8e2ff81ac0.jpg",
     "static/media/Website_Welcome.png": "/onlinestore_react/static/media/Website_Welcome.b24b9608e4bc4d60d963.png",
@@ -16,11 +16,11 @@
     "static/media/auriculares_inalambricos.jpg": "/onlinestore_react/static/media/auriculares_inalambricos.ae605ec868e86b9f4122.jpg",
     "index.html": "/onlinestore_react/index.html",
     "main.b1c38e8e.css.map": "/onlinestore_react/static/css/main.b1c38e8e.css.map",
-    "main.064b6ad4.js.map": "/onlinestore_react/static/js/main.064b6ad4.js.map",
+    "main.b47bc542.js.map": "/onlinestore_react/static/js/main.b47bc542.js.map",
     "453.aa77d7ed.chunk.js.map": "/onlinestore_react/static/js/453.aa77d7ed.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b1c38e8e.css",
-    "static/js/main.064b6ad4.js"
+    "static/js/main.b47bc542.js"
   ]
 }
