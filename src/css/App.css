@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +10,8 @@ h1 {
   color: rgb(204, 18, 29);
 }
 
-p, li {
+p,
+li {
   padding: 7px;
   margin-left: 40px;
   align-self: center;
@@ -20,6 +20,7 @@ p, li {
 body {
   background-color: white;
   justify-content: center;
+  font-weight: bold;
 }
 
 header {
@@ -40,27 +41,13 @@ header input {
   float: inline-end;
 }
 
-.bd-home {
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: fixed;
-}
-
-.bg-blue-900 h1 {
-  color: skyblue;
-}
-
 footer {
   font-family: "monserrat";
   font-weight: 800;
   color: rgb(168, 162, 162);
 }
 
-td {
-  padding: 25px;
-}
-
-.art div {
+.products div {
   background-color: #5562AB;
   height: 450px;
   align-items: center;
@@ -68,13 +55,24 @@ td {
   border: solid;
   border: 2px;
 }
-.art img {
+.products img {
   border-width: 2px;
   border: solid;
   border-color: black;
 }
+.products td {
+  padding: 25px;
+}
+
+.details td {
+  padding: 25px;
+}
+.details h1 {
+  color: red;
+}
 
 button {
+  margin: 2.25rem;
   background-color: black;
   color: white;
   border-radius: 500px;
@@ -82,11 +80,10 @@ button {
   margin-bottom: 25px;
 }
 
-.details h1 {
-  color: red;
+button:hover {
+  background-color: rgb(100, 94, 94);
 }
 
-/* Ajusta el tamaño de la alerta */
 .swal-popup {
   width: 95%;
   padding: 20px;
@@ -108,4 +105,50 @@ button {
 
 .swal-confirm-button {
   width: auto;
+}
+
+.cart img {
+  margin: 10px;
+  width: 150px;
+  height: 150px;
+  border-color: black;
+  border: solid;
+  border-width: 2px;
+  border-radius: 30px;
+  float: left;
+}
+.cart table {
+  margin: 25px;
+}
+.cart .total {
+  margin-left: 55%;
+}
+.cart tr {
+  text-align: left;
+}
+.cart td {
+  padding-right: 13px;
+}
+.cart h1 {
+  margin: 0;
+  font-size: 16px;
+}
+.cart p {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+}
+.cart #check {
+  height: 70px;
+  background-color: #6A14BF;
+  font-size: 22px;
+  font-weight: bold;
+  text-shadow: -1px -1px 0px black, 1px -1px 0px black, -1px 1px 0px black, 1px 1px 0px black;
+}
+.cart #check:hover {
+  background-color: #b392d3;
+}
+
+.cardBlog {
+  margin: 0.5rem;
 }/*# sourceMappingURL=app.css.map */

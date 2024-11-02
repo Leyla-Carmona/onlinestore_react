@@ -1,7 +1,6 @@
 import React from 'react';
 import './css/App.css';
 import nav from './images/Website_Welcome.png';
-import search from './images/lupa.png';
 import { Home } from './components/Home';
 import { Productos } from './components/products';
 import { Details } from './components/Details';
@@ -22,14 +21,12 @@ function App() {
     setCart((prevCart) => {
       const existingProduct = prevCart.find(item => item.id === product.id);
       if (existingProduct) {
-        // Si el producto ya existe, incrementar la cantidad
         return prevCart.map(item =>
           item.id === product.id
             ? { ...item, quantity: item.quantity + 1 }
             : item
         );
       }
-      // Si no existe, agregarlo con cantidad 1
       return [...prevCart, { ...product, quantity: 1 }];
     });
   };
@@ -43,12 +40,10 @@ function App() {
       <div>
         <header>
           <nav className='justify-center items-center'>
-            <ul>
+            <ul>             
+              <li><Link to="/">Home</Link></li>
               <li><Link to="/products">Our products</Link></li>
               <li><Link to="/cart">Cart ({cart.length})</Link></li>
-              <li>
-                <img src={search} className='h-3 w-auto mr-3' alt='Laptop'/>
-              </li>
             </ul>
           </nav>
         </header>
@@ -64,7 +59,6 @@ function App() {
             <Route path="/details/:id" element={<Details />} />
             <Route path="/cart" element={<Cart cart={cart} removeFromCart={removeFromCart} />} />
           </Routes>
-
           <h1>FAQS</h1>
           <h1>Payment methods</h1>
           <p>We accept VISA, MasterCard, American Express, Paypal and Binance, We accept VISA, MasterCard, American Express, Paypal and Binance.</p>
@@ -78,7 +72,6 @@ function App() {
       </div>
       <footer className='bg-gray-200'>
         <div className='justify-center p-6' >
-          <p>About us <br></br></p>
           <p onClick={terms} className='cursor-pointer'>Terms and conditions</p> <br></br>
         </div>
       </footer>

@@ -9,7 +9,7 @@ export const Details = () => {
     return <div>Please try again later</div>;
   }
   return (
-    <div>
+    <div className='details'>
       <img src={`${blog.imagen}`} alt={blog.title} className='w-[300px] rounded-2xl border-opacity-15 bg-white' />
       <table>
         <tbody>
@@ -28,7 +28,7 @@ export const Details = () => {
       {blog.advantages.map((char, index) => (
         <li key={index}>{char}</li>
       ))}
-       <button className="m-9 w-[75%] bg-violet-800 hover:bg-violet-400 active:bg-slate-800 focus:outline-none focus:ring focus:ring-violet-300">
+       <button>
         Add to cart
       </button>
     </div>

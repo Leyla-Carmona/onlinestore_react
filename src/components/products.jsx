@@ -25,8 +25,7 @@ export const Productos = ({ data , addToCart  }) => {
       <div>
       </div>
       <nav>
-        <ul class="inline-flex -space-x-px justify-center text-
-        center">
+        <ul class="inline-flex -space-x-px justify-center text-center">
           <li 
               key={currentPage - 1}
               onClick={() => { 
@@ -61,9 +60,8 @@ export const Productos = ({ data , addToCart  }) => {
   );
 };
 
-
 const Producto = ({ blog, addToCart }) => (
-  <div className="art">
+  <div className="products">
     <div className="flex flex-col items-center m-5 w-[280px] rounded-3xl">
       <Link to={`/details/${blog.id}`}>
         <img src={blog.imagen} alt={blog.title} className="border-black border-solid border-2 m-4 mt-5 w-[220px] rounded-2xl bg-white" />
