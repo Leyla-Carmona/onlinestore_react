@@ -53,6 +53,7 @@ function App() {
           <div className=' bg-blue-900 h-6'>
           <h1 id='section'> </h1>
           </div>
+          <Home hotsale={hotsale} specialoffers={specialoffers} />
           <Routes>
             <Route path="/" element={<Home hotsale={hotsale} specialoffers={specialoffers} />} />
             <Route path="/products" element={<Productos data={data} addToCart={addToCart} />} />
