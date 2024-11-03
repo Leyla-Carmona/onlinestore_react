@@ -44,7 +44,6 @@ function App() {
               <li><Link to="/home">Home</Link></li>
               <li><Link to="/products">Our products</Link></li>
               <li><Link to="/cart">Cart</Link></li>              
-              <li><Link to="https://leyla-carmona.github.io/Portfolio/index.html">Portfolio</Link></li>
             </ul>
           </nav>
         </header>
