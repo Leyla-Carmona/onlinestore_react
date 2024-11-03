@@ -43,8 +43,7 @@ function App() {
             <ul>                           
               <li><Link to="/home">Home</Link></li>
               <li><Link to="/products">Our products</Link></li>
-              <li><Link to="/cart">Cart</Link></li>              
-              <li><a href="https://leyla-carmona.github.io/Portfolio/index.html">Portfolio</a></li>    
+              <li><Link to="/cart">Cart</Link></li>                 
               </ul>
           </nav>
         </header>
