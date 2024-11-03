@@ -54,10 +54,12 @@ header nav {
     justify-self: center;
 }
 
+
 header li {
     color: var(--secondary-color);
     display: inline-flex;
-    padding: var(--padding-standard);
+    padding: 0.4rem;
+    margin: 0.2rem;
     cursor: pointer;
 }
 
@@ -67,7 +69,6 @@ header li:hover {
     text-underline-offset: dashed;
 }
 
-/* Navegación de Productos */
 .navproducts {
     align-items: center;
     justify-self: center;
@@ -80,7 +81,6 @@ header li:hover {
     cursor: pointer;
 }
 
-/* Tarjetas de Productos */
 .productscard {
     margin: 20px;
     background-color: var(--background-color);
@@ -305,6 +305,14 @@ button:hover {
         float: right;
         width: var(--grid2-width);
     }
+
+    
+header li {
+    color: var(--secondary-color);
+    display: inline-flex;
+    padding: var(--padding-standard);
+    cursor: pointer;
+}
 }
 
 @media (min-width: 1024px) {
@@ -312,6 +320,13 @@ button:hover {
         --grid2-width: 600px;
         --grid4-width: 320px;
     }
+    
+header li {
+    color: var(--secondary-color);
+    display: inline-flex;
+    padding: var(--padding-standard);
+    cursor: pointer;
+}
 }
 
 
@@ -320,6 +335,13 @@ button:hover {
         --grid2-width: 750px;
         --grid4-width: 500px;
     }
+    
+header li {
+    color: var(--secondary-color);
+    display: inline-flex;
+    padding: var(--padding-standard);
+    cursor: pointer;
+}
 }
 
 @media (min-width: 2560px) {
@@ -327,4 +349,11 @@ button:hover {
         --grid2-width: 1200px;
         --grid4-width: 750px;
     }
+    
+header li {
+    color: var(--secondary-color);
+    display: inline-flex;
+    padding: var(--padding-standard);
+    cursor: pointer;
+}
 }
