@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
+import Swal from 'sweetalert2';
 
 export const Productos = ({ data, addToCart }) => {
 
@@ -78,7 +79,7 @@ const Producto = ({ blog, addToCart }) => (
             <td>${blog.price}</td>
           </tr>
       </table>
-      <button onClick={() => addToCart(blog)} className="bg-black text-white py-1 px-4 mt-3 rounded hover:bg-slate-500">
+      <button onClick={() => {addToCart(blog);cartmessage()}} className="bg-black text-white py-1 px-4 mt-3 rounded hover:bg-slate-500">
         Add to Cart
       </button>
   </div>
@@ -86,3 +87,17 @@ const Producto = ({ blog, addToCart }) => (
 );
 
 export default Producto;
+
+
+const cartmessage = () => {
+  Swal.fire({
+    title: '🎉 Great choice! ',
+    html: '<b>Your item has been successfully added to your cart. 🛒 </b>',
+    customClass: {
+      popup: 'swal-popup',
+      title: 'swal-title',
+      content: 'swal-content',
+      confirmButton: 'swal-confirm-button',
+    }
+  });
+};
