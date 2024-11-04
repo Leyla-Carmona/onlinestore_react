@@ -6,7 +6,7 @@ import { Productos } from './components/products';
 import { Details } from './components/Details';
 import { Cart } from './components/Cart';
 import { blogs } from './data/dataeng';
-import { HashRouter  as Router, Route, Routes, Link, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Link, Navigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import { useState } from 'react';
 
